@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Void SMP</title>
+<title>Voidless SMP</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;600;700&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -247,75 +247,295 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 <div id="root"></div>
 <script id="smp-data" type="application/json">
 {
-  "name": "Void SMP",
+  "name": "Voidless SMP",
   "tagline": "A survival server with custom gear, admin-run 1v1 fights and events you won't find anywhere else.",
   "ip": "play.yourserver.net",
   "version": "Java 1.21.11",
-  "discord": "https://discord.gg/your-invite",
+  "discord": "https://discord.gg/RRCfsQ54qZ",
   "season": "Season 3",
   "news": [
-    { "date": "2026-11-21", "title": "New: Tierlist", "pinned": true, "text": "See where every fighter on the server ranks, overall and per kit. Staff update it after Tourney nights." },
-    { "date": "2026-11-21", "title": "Void Wand", "pinned": false, "text": "Staff can now make builds vanish into the void and bring them back. Watch out for it during events." },
-    { "date": "2026-11-15", "title": "Gems arrived", "pinned": false, "text": "Items can now carry gem icons around their names in seven colors." }
+    {
+      "date": "2026-11-21",
+      "title": "New: Tierlist",
+      "pinned": true,
+      "text": "See where every fighter on the server ranks, overall and per kit. Staff update it after Tourney nights."
+    },
+    {
+      "date": "2026-11-21",
+      "title": "Void Wand",
+      "pinned": false,
+      "text": "Staff can now make builds vanish into the void and bring them back. Watch out for it during events."
+    },
+    {
+      "date": "2026-11-15",
+      "title": "Gems arrived",
+      "pinned": false,
+      "text": "Items can now carry gem icons around their names in seven colors."
+    }
   ],
   "events": [
-    { "when": "Every Saturday · 20:00 CET", "title": "Tourney night", "text": "Admins call out matchups live. Be online if you want to fight." },
-    { "when": "To be announced", "title": "Special event", "text": "Something is coming. Watch Discord for the date." }
+    {
+      "when": "Every Saturday · 20:00 CET",
+      "title": "Tourney night",
+      "text": "Admins call out matchups live. Be online if you want to fight."
+    },
+    {
+      "when": "To be announced",
+      "title": "Special event",
+      "text": "Something is coming. Watch Discord for the date."
+    }
   ],
   "rules": [
-    { "title": "Be respectful", "text": "No harassment, slurs or targeting other players in chat or in voice." },
-    { "title": "No cheating", "text": "No hacked clients, x-ray packs, dupes or exploits. Auto-clickers are banned in PvP." },
-    { "title": "No griefing or stealing", "text": "Don't break, take or lava other people's builds and chests." },
-    { "title": "Keep fights fair", "text": "PvP only when both players agree, or in an official Tourney fight." },
-    { "title": "Listen to staff", "text": "If staff ask you to stop something, stop. Disagree in Discord afterwards." },
-    { "title": "One account per person", "text": "Alts are not allowed without staff approval." }
+    {
+      "title": "Be respectful",
+      "text": "No harassment, slurs or targeting other players in chat or in voice."
+    },
+    {
+      "title": "No cheating",
+      "text": "No hacked clients, x-ray packs, dupes or exploits. Auto-clickers are banned in PvP."
+    },
+    {
+      "title": "No griefing or stealing",
+      "text": "Don't break, take or lava other people's builds and chests."
+    },
+    {
+      "title": "Keep fights fair",
+      "text": "PvP only when both players agree, or in an official Tourney fight."
+    },
+    {
+      "title": "Listen to staff",
+      "text": "If staff ask you to stop something, stop. Disagree in Discord afterwards."
+    },
+    {
+      "title": "One account per person",
+      "text": "Alts are not allowed without staff approval."
+    }
   ],
   "features": [
-    { "icon": "crown", "tag": "Gear", "title": "Void Crown", "text": "A 3D purple devil crown worn as a diamond or netherite helmet. Unbreakable, and it stays with you on death.", "cmd": "" },
-    { "icon": "horn", "tag": "Gear", "title": "Sculk Horns", "text": "Two craftable horns, Distance and Area, each with its own purple ability and texture.", "cmd": "" },
-    { "icon": "gem", "tag": "Cosmetic", "title": "Gems", "text": "Seven gem colors (yellow, red, green, purple, orange, pink, white) that frame an item's name.", "cmd": "/gem <color>" },
-    { "icon": "wand", "tag": "Events", "title": "Void Wand", "text": "Staff select blocks and pull them into the void with an animation, then restore them later.", "cmd": "" },
-    { "icon": "swords", "tag": "PvP", "title": "Tourney", "text": "Admins pick two players for a 1v1 with fixed kits. Wins and losses move your Elo.", "cmd": "" }
+    {
+      "icon": "crown",
+      "tag": "Gear",
+      "title": "Void Crown",
+      "text": "A 3D purple devil crown worn as a diamond or netherite helmet. Unbreakable, and it stays with you on death.",
+      "cmd": ""
+    },
+    {
+      "icon": "horn",
+      "tag": "Gear",
+      "title": "Sculk Horns",
+      "text": "Two craftable horns, Distance and Area, each with its own purple ability and texture.",
+      "cmd": ""
+    },
+    {
+      "icon": "gem",
+      "tag": "Cosmetic",
+      "title": "Gems",
+      "text": "Seven gem colors (yellow, red, green, purple, orange, pink, white) that frame an item's name.",
+      "cmd": "/gem \u003ccolor>"
+    },
+    {
+      "icon": "wand",
+      "tag": "Events",
+      "title": "Void Wand",
+      "text": "Staff select blocks and pull them into the void with an animation, then restore them later.",
+      "cmd": ""
+    },
+    {
+      "icon": "swords",
+      "tag": "PvP",
+      "title": "Tourney",
+      "text": "Admins pick two players for a 1v1 with fixed kits. Wins and losses move your Elo.",
+      "cmd": ""
+    }
   ],
   "leaderboard": {
     "example": true,
     "updated": "2026-11-21",
     "players": [
-      { "name": "Player1", "elo": 1284, "wins": 12, "losses": 3 },
-      { "name": "Player2", "elo": 1211, "wins": 9, "losses": 4 },
-      { "name": "Player3", "elo": 1167, "wins": 8, "losses": 6 },
-      { "name": "Player4", "elo": 1102, "wins": 5, "losses": 5 },
-      { "name": "Player5", "elo": 1040, "wins": 3, "losses": 6 },
-      { "name": "Player6", "elo": 986, "wins": 2, "losses": 7 }
+      {
+        "name": "Player1",
+        "elo": 1284,
+        "wins": 12,
+        "losses": 3
+      },
+      {
+        "name": "Player2",
+        "elo": 1211,
+        "wins": 9,
+        "losses": 4
+      },
+      {
+        "name": "Player3",
+        "elo": 1167,
+        "wins": 8,
+        "losses": 6
+      },
+      {
+        "name": "Player4",
+        "elo": 1102,
+        "wins": 5,
+        "losses": 5
+      },
+      {
+        "name": "Player5",
+        "elo": 1040,
+        "wins": 3,
+        "losses": 6
+      },
+      {
+        "name": "Player6",
+        "elo": 986,
+        "wins": 2,
+        "losses": 7
+      }
     ]
   },
   "tierlist": {
     "example": true,
     "updated": "2026-11-21",
     "tiers": [
-      { "id": "S", "name": "Godlike", "color": "#f472b6", "desc": "Top of the server. Beats almost anyone." },
-      { "id": "A", "name": "Elite", "color": "#d08cf9", "desc": "Wins most fights, rarely loses." },
-      { "id": "B", "name": "Strong", "color": "#a855f7", "desc": "Solid fighter, can upset A tier." },
-      { "id": "C", "name": "Decent", "color": "#8b7bd8", "desc": "Knows the basics, still improving." },
-      { "id": "D", "name": "Rookie", "color": "#6b6390", "desc": "New to PvP or still learning the kits." }
+      {
+        "id": "S",
+        "name": "Godlike",
+        "color": "#f472b6",
+        "desc": "Top of the server. Beats almost anyone."
+      },
+      {
+        "id": "A",
+        "name": "Elite",
+        "color": "#d08cf9",
+        "desc": "Wins most fights, rarely loses."
+      },
+      {
+        "id": "B",
+        "name": "Strong",
+        "color": "#a855f7",
+        "desc": "Solid fighter, can upset A tier."
+      },
+      {
+        "id": "C",
+        "name": "Decent",
+        "color": "#8b7bd8",
+        "desc": "Knows the basics, still improving."
+      },
+      {
+        "id": "D",
+        "name": "Rookie",
+        "color": "#6b6390",
+        "desc": "New to PvP or still learning the kits."
+      }
     ],
     "categories": {
-      "Overall": { "S": ["Player1"], "A": ["Player2", "Player3"], "B": ["Player4", "Player7"], "C": ["Player5", "Player8"], "D": ["Player6"] },
-      "Sword": { "S": ["Player2"], "A": ["Player1"], "B": ["Player3", "Player4"], "C": ["Player7"], "D": ["Player5", "Player6"] },
-      "Axe": { "S": ["Player1"], "A": ["Player4"], "B": ["Player2"], "C": ["Player3", "Player6"], "D": ["Player5"] },
-      "Mace": { "S": ["Player3"], "A": ["Player1", "Player7"], "B": [], "C": ["Player2"], "D": ["Player4", "Player8"] }
+      "Overall": {
+        "S": [
+          "Player1"
+        ],
+        "A": [
+          "Player2",
+          "Player3"
+        ],
+        "B": [
+          "Player4",
+          "Player7"
+        ],
+        "C": [
+          "Player5",
+          "Player8"
+        ],
+        "D": [
+          "Player6"
+        ]
+      },
+      "Sword": {
+        "S": [
+          "Player2"
+        ],
+        "A": [
+          "Player1"
+        ],
+        "B": [
+          "Player3",
+          "Player4"
+        ],
+        "C": [
+          "Player7"
+        ],
+        "D": [
+          "Player5",
+          "Player6"
+        ]
+      },
+      "Axe": {
+        "S": [
+          "Player1"
+        ],
+        "A": [
+          "Player4"
+        ],
+        "B": [
+          "Player2"
+        ],
+        "C": [
+          "Player3",
+          "Player6"
+        ],
+        "D": [
+          "Player5"
+        ]
+      },
+      "Mace": {
+        "S": [
+          "Player3"
+        ],
+        "A": [
+          "Player1",
+          "Player7"
+        ],
+        "B": [],
+        "C": [
+          "Player2"
+        ],
+        "D": [
+          "Player4",
+          "Player8"
+        ]
+      }
     }
   },
   "staff": [
-    { "name": "Deyx", "role": "Owner", "color": "#f472b6" },
-    { "name": "Admin", "role": "Admin", "color": "#a855f7" },
-    { "name": "Moderator", "role": "Moderator", "color": "#c4b5fd" }
+    {
+      "name": "Deyx",
+      "role": "Owner",
+      "color": "#f472b6"
+    },
+    {
+      "name": "Admin",
+      "role": "Admin",
+      "color": "#a855f7"
+    },
+    {
+      "name": "Moderator",
+      "role": "Moderator",
+      "color": "#c4b5fd"
+    }
   ],
   "join": [
-    { "title": "Open Minecraft", "text": "Use Java Edition 1.21.11." },
-    { "title": "Add the server", "text": "Multiplayer → Add Server, then paste the IP from the top of this page." },
-    { "title": "Accept the resource pack", "text": "Say yes to the server pack. Without it, the crown, horns, gems and Tourney menus show up as plain items." },
-    { "title": "Join the Discord", "text": "Announcements, event times and support all happen there." }
+    {
+      "title": "Open Minecraft",
+      "text": "Use Java Edition 1.21.11."
+    },
+    {
+      "title": "Add the server",
+      "text": "Multiplayer → Add Server, then paste the IP from the top of this page."
+    },
+    {
+      "title": "Accept the resource pack",
+      "text": "Say yes to the server pack. Without it, the crown, horns, gems and Tourney menus show up as plain items."
+    },
+    {
+      "title": "Join the Discord",
+      "text": "Announcements, event times and support all happen there."
+    }
   ]
 }
 </script>
