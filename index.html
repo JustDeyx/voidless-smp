@@ -644,8 +644,9 @@ $("#root").innerHTML = `
 </aside>`;
 
 /* ---------- Pixel sprites ---------- */
-const PAL = { P: "#b06cf5", D: "#5b21b6", L: "#dcc0fb", G: "#f27ab8", W: "#f3eefa", K: "#2e1065" };
+const PAL = { P: "#b06cf5", D: "#5b21b6", L: "#dcc0fb", G: "#f27ab8", W: "#f3eefa", K: "#2e1065", E: "#2a1545", V: "#05030a" };
 const SPRITES = {
+  eye: [".........DDDDD.........", "......DDDPPPPPDDD......", "....DDPPEEEEEEEPPDD....", "..DDPPEEEGGGGGEEEPPDD..", ".DPPEEEGGWPKPPGGEEEPPD.", "DPPEEEGGPPKVKPPGGEEEPPD", "DPEEEEGGPKVVVKPGGEEEEPD", "DPPEEEGGPPKVKPPGGEEEPPD", ".DPPEEEGGPPKPPGGEEEPPD.", "..DDPPEEEGGGGGEEEPPDD..", "....DDPPEEEEEEEPPDD....", "......DDDPPPPPDDD......", ".........DDDDD........."],
   crown: ["...G.....G.....G...","..GWG...GWG...GWG..","...P.....P.....P...","...PP...PPP...PP...","...PPP.PPPPP.PPP...","...PPPPPPPPPPPPP...","..LPPPPPPPPPPPPPL..","..PPWPPPPGPPPPWPP..","..PPPPPPGWGPPPPPP..","..PPPPPPPGPPPPPPP..","..DDDDDDDDDDDDDDD..","..KDKDKDKDKDKDKDK.."],
   horn: ["..........LP",".........PPD","........PPD.",".......PPD..","..G...PPD...",".GWG.PPD....","..GPPPD.....","..PPPD......",".PPPD.......",".PPD........","..D........."],
   gem: ["...LLPPP...","..LWLPPPP..",".LWPPPPPPP.","PPPPPPPPPPD",".PPPPPPPPD.","..PPPPPPD..","...PPPPD...","....PPD....",".....D....."],
@@ -675,8 +676,8 @@ function head(name, color = "#b06cf5") {
   x.fillStyle = "#120c18"; x.fillRect(2, 3, 1, 1); x.fillRect(5, 3, 1, 1); x.fillRect(3, 5, 2, 1);
   return headCache[key] = c.toDataURL();
 }
-sprite($("#crown"), SPRITES.crown);
-sprite($("#brand-crown"), SPRITES.crown);
+sprite($("#crown"), SPRITES.eye);
+sprite($("#brand-crown"), SPRITES.eye);
 
 /* ---------- Render the site from data ---------- */
 let tlCat = null, tlQuery = "";
